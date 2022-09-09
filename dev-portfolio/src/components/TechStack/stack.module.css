@@ -1,0 +1,26 @@
+.techStack {
+  margin: 100px 0;
+  color: #42446e;
+}
+
+.techStackTitle h3 {
+  font-weight: 400;
+  line-height: 70px;
+}
+
+.techStackTitle {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.img {
+  max-width: 80px;
+  margin: 0 auto;
+}
+
+.imgBlock {
+  margin-top: 50px;
+  gap: 50px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
