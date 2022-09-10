@@ -1,14 +1,19 @@
-import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import React, { useContext } from "react";
+import { NavLink } from "react-router-dom";
 import {
   AiFillGithub,
   AiFillLinkedin,
 } from "react-icons/ai";
 import { BsTelegram } from "react-icons/bs";
+import ReactSwitch from "react-switch";
+
+import { ThemeContext } from "../../Context/ThemeContext";
 
 import styles from "./header.module.css";
 
 export const Header = () => {
+  const { theme, themeToggler } = useContext(ThemeContext);
+
   return (
     <header>
       <div className={styles.header}>
@@ -60,6 +65,12 @@ export const Header = () => {
               </a>
             </li>
           </ul>
+          <div>
+            <ReactSwitch
+              checked={theme === "dark"}
+              onChange={themeToggler}
+            />
+          </div>
         </nav>
       </div>
     </header>
