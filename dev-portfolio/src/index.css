@@ -38,3 +38,35 @@ body {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
+
+html,
+#dark {
+  background: #191919;
+  transition: all 0.3s;
+}
+
+html,
+#light {
+  background: #fff;
+  transition: all 0.3s;
+}
+
+#dark .about-me,
+#dark .tech-title,
+#dark .projects-title h3,
+#dark .projects-title p,
+#dark .project-links span a,
+#darl .project-desc h4 {
+  color: #fff;
+}
+
+#dark .main-photo-bg {
+  transition: all 0.3s;
+  background: #191919;
+}
+
+#dark .project-card {
+  color: #ccc;
+  background: #363636;
+  box-shadow: 2px 2px 100px rgba(0, 0, 0, 0.2);
+}
