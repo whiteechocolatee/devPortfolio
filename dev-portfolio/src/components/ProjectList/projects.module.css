@@ -1,0 +1,23 @@
+.projectsContainer {
+  color: #242424;
+}
+
+.projectsTitle h3 {
+  font-weight: 400;
+  line-height: 70px;
+  color: #42446e;
+}
+
+.projectsTitle p {
+  color: #42446e;
+}
+
+.projectsTitle {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.projectsList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
