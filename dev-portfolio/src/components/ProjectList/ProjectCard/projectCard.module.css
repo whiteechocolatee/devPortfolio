@@ -1,0 +1,41 @@
+.projectCard {
+  background: #ffffff;
+  box-shadow: 2px 2px 100px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  width: 373px;
+  max-height: 567px;
+  margin: auto;
+}
+
+.projectImg {
+  max-height: 260px;
+  overflow: hidden;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.projectDescription {
+  padding: 10px 20px;
+}
+
+.projectDescription h4 {
+  margin: 10px 0;
+  font-weight: 400;
+}
+
+.projectText {
+  font-weight: 300;
+  height: 195px;
+  overflow-y: scroll;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.links span a {
+  margin-left: 8px;
+  color: #242424;
+}
