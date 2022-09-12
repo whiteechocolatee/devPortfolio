@@ -12,7 +12,7 @@ export const AboutMe = () => {
         <h3 className={styles.aboutMeTitle}>
           Hi <Emoji symbol='👋' />,<br />
           My name is <br />
-          <span className={styles.aboutMeName}>
+          <span className={`active`}>
             Andrey Black
           </span>{" "}
           <br />
