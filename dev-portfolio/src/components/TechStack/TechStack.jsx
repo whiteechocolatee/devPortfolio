@@ -18,28 +18,29 @@ import vscode from "./TechnologyImg/vscode.png";
 const images = [
   { id: 1, path: html, alt: "html" },
   { id: 2, path: css, alt: "css" },
-  { id: 2, path: js, alt: "js" },
-  { id: 2, path: react, alt: "react" },
-  { id: 2, path: redux, alt: "redux" },
-  { id: 2, path: bootstrap, alt: "bootstrap" },
-  { id: 2, path: mongodb, alt: "mongodb" },
-  { id: 2, path: sql, alt: "sql" },
-  { id: 2, path: git, alt: "git" },
-  { id: 2, path: github, alt: "github" },
-  { id: 2, path: node, alt: "node" },
-  { id: 2, path: vscode, alt: "vscode" },
+  { id: 3, path: js, alt: "js" },
+  { id: 4, path: react, alt: "react" },
+  { id: 5, path: redux, alt: "redux" },
+  { id: 6, path: bootstrap, alt: "bootstrap" },
+  { id: 7, path: mongodb, alt: "mongodb" },
+  { id: 8, path: sql, alt: "sql" },
+  { id: 9, path: git, alt: "git" },
+  { id: 10, path: github, alt: "github" },
+  { id: 11, path: node, alt: "node" },
+  { id: 12, path: vscode, alt: "vscode" },
 ];
 
 export const TechStack = () => {
   return (
     <article className={styles.techStack}>
-      <div className={`${styles.techStackTitle} tech-title`}>
+      <div
+        className={`${styles.techStackTitle} tech-title`}>
         <h3>My Tech Stack</h3>
         <p> Technologies I’ve been working with recently</p>
       </div>
       <div className={styles.imgBlock}>
         {images.map((image) => (
-          <div className={styles.img}>
+          <div key={image.id} className={styles.img}>
             <img
               className='img-fluid'
               src={image.path}
