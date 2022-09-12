@@ -56,8 +56,14 @@ html,
 #dark .projects-title h3,
 #dark .projects-title p,
 #dark .project-links span a,
-#darl .project-desc h4 {
+#dark .project-desc h4,
+#dark .about-page h1,
+#dark .contact-title h1 {
   color: #fff;
+}
+
+#dark .contact-links a {
+  color: #666666;
 }
 
 #dark .main-photo-bg {
@@ -69,4 +75,22 @@ html,
   color: #ccc;
   background: #363636;
   box-shadow: 2px 2px 100px rgba(0, 0, 0, 0.2);
+}
+
+.active {
+  background: -webkit-linear-gradient(
+    left,
+    #40a5ee,
+    #c429b7
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.content-wrapper {
+  min-height: calc(100vh - 470px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
