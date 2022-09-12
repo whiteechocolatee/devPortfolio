@@ -51,6 +51,10 @@ html,
   transition: all 0.3s;
 }
 
+h1 {
+  font-weight: 800;
+}
+
 #dark .about-me,
 #dark .tech-title,
 #dark .projects-title h3,
@@ -58,7 +62,8 @@ html,
 #dark .project-links span a,
 #dark .project-desc h4,
 #dark .about-page h1,
-#dark .contact-title h1 {
+#dark .contact-title h1,
+#dark .select {
   color: #fff;
 }
 
