@@ -26,7 +26,6 @@
   font-weight: 300;
   height: 195px;
   overflow-y: scroll;
-  overflow: hidden;
   text-overflow: ellipsis;
 }
 
