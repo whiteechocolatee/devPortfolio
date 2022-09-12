@@ -1,0 +1,21 @@
+.main {
+  flex-direction: column;
+  width: 650px;
+  align-items: flex-start;
+}
+
+.workExperience {
+  width: 100%;
+}
+
+.main h1 {
+  color: #42446e;
+  font-weight: 400;
+  line-height: 250%;
+}
+
+.description {
+  color: #666666;
+  line-height: 26px;
+  font-weight: 300;
+}
