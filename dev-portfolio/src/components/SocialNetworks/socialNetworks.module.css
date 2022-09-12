@@ -1,0 +1,30 @@
+.socialList li svg {
+  color: #666666;
+  font-size: 30px;
+  transition: 0.3s;
+}
+
+.socialList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gitLink svg:hover {
+  transition: 0.3s ease-in;
+  color: black;
+}
+
+.linkedInLink svg:hover {
+  color: #0b66c2;
+  transition: 0.3s ease-in;
+}
+
+.telegramLink svg:hover {
+  color: #23a4e2;
+  transition: 0.3s ease-in;
+}
