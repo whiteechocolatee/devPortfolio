@@ -1,0 +1,29 @@
+.navList {
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.navList li a {
+  color: #666666;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.navList li a:hover {
+  background: -webkit-linear-gradient(
+    left,
+    #40a5ee,
+    #c429b7
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  transition: all 0.3s;
+}
