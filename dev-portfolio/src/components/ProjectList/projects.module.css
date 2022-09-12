@@ -13,11 +13,12 @@
 }
 
 .projectsTitle {
-  margin: 0 auto;
+  margin: 50px auto;
   text-align: center;
 }
 
 .projectsList {
   display: grid;
+  gap: 50px;
   grid-template-columns: repeat(3, 1fr);
 }
