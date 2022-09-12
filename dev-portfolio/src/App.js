@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, Suspense } from "react";
 import {
   BrowserRouter,
   Routes,
@@ -25,31 +25,33 @@ function App() {
   return (
     <ThemeContext.Provider value={{ theme, themeToggler }}>
       <div id={theme}>
-        <BrowserRouter>
-          <Routes>
-            <Route path='/' exact element={<Main />} />
-            <Route
-              path='/about'
-              exact
-              element={<About />}
-            />
-            <Route
-              path='/technologies'
-              exact
-              element={<TechStackPage />}
-            />
-            <Route
-              path='/projects'
-              exact
-              element={<ProjectsPage />}
-            />
-            <Route
-              path='/contacts'
-              exact
-              element={<ContactUs />}
-            />
-          </Routes>
-        </BrowserRouter>
+        <Suspense fallback={null}>
+          <BrowserRouter>
+            <Routes>
+              <Route path='/' exact element={<Main />} />
+              <Route
+                path='/about'
+                exact
+                element={<About />}
+              />
+              <Route
+                path='/technologies'
+                exact
+                element={<TechStackPage />}
+              />
+              <Route
+                path='/projects'
+                exact
+                element={<ProjectsPage />}
+              />
+              <Route
+                path='/contacts'
+                exact
+                element={<ContactUs />}
+              />
+            </Routes>
+          </BrowserRouter>
+        </Suspense>
       </div>
     </ThemeContext.Provider>
   );
