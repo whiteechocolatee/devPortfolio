@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 import styles from "./stack.module.css";
 
@@ -31,12 +32,14 @@ const images = [
 ];
 
 export const TechStack = () => {
+  const { t } = useTranslation('techstack');
+
   return (
     <article className={styles.techStack}>
       <div
         className={`${styles.techStackTitle} tech-title`}>
-        <h3>My Tech Stack</h3>
-        <p> Technologies I’ve been working with recently</p>
+        <h3>{t('title')}</h3>
+        <p>{t('description')}</p>
       </div>
       <div className={styles.imgBlock}>
         {images.map((image) => (

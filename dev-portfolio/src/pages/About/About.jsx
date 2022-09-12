@@ -12,6 +12,7 @@ const projects = [
     place: "Kharkiv",
     workFormat: "Full time",
     workDuration: "May 2022 - June 2022",
+    workPlace: "Freelance",
   },
   {
     id: 2,
@@ -19,6 +20,7 @@ const projects = [
     place: "Kharkiv",
     workFormat: "Full time",
     workDuration: "June 2022 - July 2022",
+    workPlace: "Freelance",
   },
   {
     id: 1,
@@ -26,6 +28,7 @@ const projects = [
     place: "Kharkiv",
     workFormat: "Full time",
     workDuration: "Jule 2022 - Sept. 2022",
+    workPlace: "Freelance",
   },
 ];
 
@@ -39,7 +42,8 @@ const education = [
   },
   {
     id: 2,
-    title: "Diploma of Bachelor Electrical engineering systems",
+    title:
+      "Diploma of Bachelor Electrical engineering systems",
     place: "Kharkiv",
     workFormat: "Full time",
     workDuration: "Sept. 2019 - June 2022",
@@ -78,6 +82,7 @@ export const About = () => {
               place={project.place}
               workDuration={project.workDuration}
               workFormat={project.workFormat}
+              workPlace={project.workPlace}
             />
           ))}
         </article>

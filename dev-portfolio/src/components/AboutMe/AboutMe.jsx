@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 import styles from "./aboutMe.module.css";
 import { Emoji } from "../Emoji/Emoji";
@@ -6,17 +7,19 @@ import { Emoji } from "../Emoji/Emoji";
 import img from "./img/AndreyBlck.png";
 
 export const AboutMe = () => {
+  const { t } = useTranslation(["main"]);
+
   return (
     <main className={`${styles.aboutMe} about-me`}>
       <div className={styles.aboutMeDescription}>
         <h3 className={styles.aboutMeTitle}>
-          Hi <Emoji symbol='👋' />,<br />
-          My name is <br />
+          {t("hi")} <Emoji symbol='👋' />,<br />
+          {t("myNameIs")} <br />
           <span className={`active`}>
-            Andrey Black
+            {t('andreyBlack')}
           </span>{" "}
           <br />
-          i build things for web
+          {t('buildThings')}
           <br />
         </h3>
       </div>

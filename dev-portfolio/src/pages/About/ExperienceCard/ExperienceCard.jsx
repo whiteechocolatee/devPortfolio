@@ -11,6 +11,7 @@ export const ExperienceCard = ({
   place,
   workFormat,
   workDuration,
+  workPlace,
 }) => {
   return (
     <div
@@ -18,8 +19,11 @@ export const ExperienceCard = ({
       <div className={styles.experienceInfo}>
         <p className={styles.experienceTitle}>{title}</p>
         <p className={styles.experiencePlace}>
-          <BiBuildingHouse />
-          <span> {place}</span>
+          <span>
+            <BiBuildingHouse />
+            <span> {place}</span>
+          </span>
+          <span>{workPlace}</span>
         </p>
       </div>
       <div className={styles.experienceDuration}>
