@@ -1,0 +1,10 @@
+{
+  "title": "Projects",
+  "description": "Things I’ve built so far",
+  "gribTitle": "Electronics store 'GRIB' ",
+  "gribDescription": "Full-Stack project was written using technologies such as MongoDB, Node JS, React, Redux-Toolkit, Express. Figma was also used. A full-fledged commercial online store with an admin panel for managing the store, with the ability to register a user. Was developed in two months alone. The second full-fledged project",
+  "nnwrblTitle": "Clothing store 'NNWRBL' ",
+  "nnwrblDescription": "The first Full-Stack project that was developed with the help of technologies - Pug, Express, Node, SQL. The store has an admin panel with the ability to login. The store was developed for my friends and will soon be launched.",
+  "elitasTitle": "GTA V store 'ElitasTravel'",
+  "elitasDescription": "The project was made in order to study new technologies such as MERN-stack (MongoDB , Express, React, Node). During development, I first tested React for myself in conjunction with the Redux Toolkit. An extremely simple, but at the same time extremely useful project that helped to understand technologies and use them in practice"
+}
