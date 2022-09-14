@@ -5,6 +5,8 @@ import styles from "./projects.module.css";
 import nnwrbl from "./img/nnwrblShop.png";
 import grib from "./img/gribUa.png";
 import elitasTravel from "./img/ElitasTravel.png";
+import shareNote from "./img/shareNote.png";
+
 import { ProjectCard } from "./ProjectCard/ProjectCard";
 import { useTranslation } from "react-i18next";
 
@@ -31,11 +33,37 @@ export const Projects = () => {
     },
     {
       id: 3,
+      title: t("thatsMyNoteTitle"),
+      img: shareNote,
+      description: t("thatsMyNoteDescription"),
+      githubLink:
+        "https://github.com/whiteechocolatee/thatsMyNote",
+    },
+    {
+      id: 4,
       title: t("elitasTitle"),
       img: elitasTravel,
       description: t("elitasDescription"),
       githubLink:
         "https://github.com/whiteechocolatee/ElitasTravel",
+    },
+    // mock data
+    {
+      id: 5,
+      title: t("elitasTitle"),
+      img: 'elitasTravel',
+      description: t("elitasDescription"),
+      githubLink:
+        "https://github.com/whiteechocolatee/ElitasTravel",
+    },
+    {
+      id: 6,
+      title: t("gribTitle"),
+      img: 'grib',
+      description: t("gribDescription"),
+      previewLink: "http://google.com",
+      githubLink:
+        "https://github.com/whiteechocolatee/navShop",
     },
   ];
 
