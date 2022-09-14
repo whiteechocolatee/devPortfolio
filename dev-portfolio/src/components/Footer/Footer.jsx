@@ -6,7 +6,7 @@ import styles from "./footer.module.css";
 
 export const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <footer className={`${styles.footer} container-lg`}>
       <div className={styles.contactBar}>
         <div className={styles.logoContainer}>
           <Logo />
