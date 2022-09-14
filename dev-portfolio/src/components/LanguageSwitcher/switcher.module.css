@@ -1,0 +1,9 @@
+.selectLanguage {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.selectLanguage:focus {
+  outline: none;
+}
