@@ -1,17 +1,11 @@
 import { useState, Suspense } from "react";
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 import "./index.css";
-import { Main } from "./pages/Main/Main";
 import { ThemeContext } from "./Context/ThemeContext";
-import { About } from "./pages/About/About";
-import { TechStackPage } from "./pages/TechStackPage/TechStackPage";
-import { ProjectsPage } from "./pages/ProjectsPage/ProjectsPage";
-import { ContactUs } from "./pages/ContactUs/ContactUs";
+import { Header } from "./components/Header/Header";
+import { Footer } from "./components/Footer/Footer";
+import { AnimatedRoutes } from "./components/AnimatedRoutes/AnimatedRoutes";
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -27,29 +21,9 @@ function App() {
       <div id={theme}>
         <Suspense fallback={null}>
           <BrowserRouter>
-            <Routes>
-              <Route path='/' exact element={<Main />} />
-              <Route
-                path='/about'
-                exact
-                element={<About />}
-              />
-              <Route
-                path='/technologies'
-                exact
-                element={<TechStackPage />}
-              />
-              <Route
-                path='/projects'
-                exact
-                element={<ProjectsPage />}
-              />
-              <Route
-                path='/contacts'
-                exact
-                element={<ContactUs />}
-              />
-            </Routes>
+            <Header />
+            <AnimatedRoutes />
+            <Footer />
           </BrowserRouter>
         </Suspense>
       </div>
