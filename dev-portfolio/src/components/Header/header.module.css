@@ -16,11 +16,3 @@
   justify-content: space-between;
 }
 
-.selectLanguage {
-  border: none;
-  background-color: transparent;
-}
-
-.selectLanguage:focus {
-  outline: none;
-}
