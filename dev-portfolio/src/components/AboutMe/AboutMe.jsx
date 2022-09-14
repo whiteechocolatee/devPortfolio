@@ -16,10 +16,10 @@ export const AboutMe = () => {
           {t("hi")} <Emoji symbol='👋' />,<br />
           {t("myNameIs")} <br />
           <span className={`active`}>
-            {t('andreyBlack')}
+            {t("andreyBlack")}
           </span>{" "}
           <br />
-          {t('buildThings')}
+          {t("buildThings")}
           <br />
         </h3>
       </div>

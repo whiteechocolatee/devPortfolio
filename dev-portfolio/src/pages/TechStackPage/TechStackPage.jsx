@@ -1,19 +1,23 @@
 import React from "react";
+import { motion } from "framer-motion";
 
-import { Footer } from "../../components/Footer/Footer";
-import { Header } from "../../components/Header/Header";
 import { TechStack } from "../../components/TechStack/TechStack";
+
+import { containerVariants } from "../pageAnimations";
 
 export const TechStackPage = () => {
   window.scroll(0, 0);
 
   return (
-    <div className='container-lg'>
-      <Header />
+    <motion.div
+      variants={containerVariants}
+      initial='hidden'
+      animate='visible'
+      exit='exit'
+      className='container-lg'>
       <div className='content-wrapper'>
         <TechStack />
       </div>
-      <Footer />
-    </div>
+    </motion.div>
   );
 };

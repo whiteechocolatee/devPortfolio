@@ -15,6 +15,7 @@ import git from "./TechnologyImg/git.png";
 import github from "./TechnologyImg/github.png";
 import node from "./TechnologyImg/node.png";
 import vscode from "./TechnologyImg/vscode.png";
+import { motion } from "framer-motion";
 
 const images = [
   { id: 1, path: html, alt: "html" },
@@ -32,24 +33,27 @@ const images = [
 ];
 
 export const TechStack = () => {
-  const { t } = useTranslation('techstack');
+  const { t } = useTranslation("techstack");
 
   return (
     <article className={styles.techStack}>
       <div
         className={`${styles.techStackTitle} tech-title`}>
-        <h3>{t('title')}</h3>
-        <p>{t('description')}</p>
+        <h3>{t("title")}</h3>
+        <p>{t("description")}</p>
       </div>
       <div className={styles.imgBlock}>
         {images.map((image) => (
-          <div key={image.id} className={styles.img}>
+          <motion.div
+            whileHover={{ scale: 1.2 }}
+            key={image.id}
+            className={styles.img}>
             <img
               className='img-fluid'
               src={image.path}
               alt={image.alt}
             />
-          </div>
+          </motion.div>
         ))}
       </div>
     </article>

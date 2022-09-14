@@ -1,26 +1,36 @@
 import React from "react";
-
-import { Header } from "../../components/Header/Header";
-import { Footer } from "../../components/Footer/Footer";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
+
+import { containerVariants } from "../pageAnimations";
 
 export const ContactUs = () => {
   const { t } = useTranslation("contactus");
 
   return (
-    <div className='container-lg'>
-      <Header />
+    <motion.div
+      variants={containerVariants}
+      initial='hidden'
+      animate='visible'
+      exit='exit'
+      className='container-lg'>
       <div className='content-wrapper'>
-        <div className='contact-title'>
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          transition={{
+            type: "spring",
+            stiffness: 400,
+            damping: 10,
+          }}
+          className='contact-title'>
           <h1>{t("contactMe")} :</h1>
           <h1 className='active'>
             <a href='mailto:creatuseandr@icloud.com'>
               creatuseandr@icloud.com
             </a>
           </h1>
-        </div>
+        </motion.div>
       </div>
-      <Footer />
-    </div>
+    </motion.div>
   );
 };
