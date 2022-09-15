@@ -5,13 +5,23 @@ import styles from "./aboutMe.module.css";
 import { Emoji } from "../Emoji/Emoji";
 
 import img from "./img/AndreyBlck.png";
+import { motion } from "framer-motion";
 
 export const AboutMe = () => {
   const { t } = useTranslation(["main"]);
 
   return (
     <main className={`${styles.aboutMe} about-me`}>
-      <div className={styles.aboutMeDescription}>
+      <motion.div
+        initial={{ x: "-100vw" }}
+        animate={{ x: 0 }}
+        transition={{
+          type: "spring",
+          stiffness: 260,
+          damping: 20,
+          delay: .5,
+        }}
+        className={styles.aboutMeDescription}>
         <h3 className={styles.aboutMeTitle}>
           {t("hi")} <Emoji symbol='👋' />,<br />
           {t("myNameIs")} <br />
@@ -22,8 +32,17 @@ export const AboutMe = () => {
           {t("buildThings")}
           <br />
         </h3>
-      </div>
-      <div className={styles.aboutMePhoto}>
+      </motion.div>
+      <motion.div
+        initial={{ scale: 0, rotate: 180 }}
+        animate={{ rotate: 360, scale: 1 }}
+        transition={{
+          type: "spring",
+          stiffness: 260,
+          damping: 20,
+          delay: 1,
+        }}
+        className={styles.aboutMePhoto}>
         <div className={`${styles.photo} main-photo-bg`}>
           <img
             className='img-fluid'
@@ -31,7 +50,7 @@ export const AboutMe = () => {
             alt='Andrey Blck'
           />
         </div>
-      </div>
+      </motion.div>
     </main>
   );
 };
