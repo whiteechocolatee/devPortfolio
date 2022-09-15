@@ -21,7 +21,7 @@ export const Header = () => {
           <SocialNetworks />
           <div>
             <ReactSwitch
-              checked={theme === "dark"}
+              checked={theme === "light"}
               onChange={themeToggler}
             />
           </div>
