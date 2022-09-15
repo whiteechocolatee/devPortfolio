@@ -76,7 +76,8 @@ function ParallaxText({ children, baseVelocity = 100 }) {
 
 export const Banner = () => {
   return (
-    <section className={`${styles.parallaxSection} parallax-section`}>
+    <section
+      className={`${styles.parallaxSection} parallax-section`}>
       <ParallaxText baseVelocity={-5}>
         andrey blck andrey blck
       </ParallaxText>
