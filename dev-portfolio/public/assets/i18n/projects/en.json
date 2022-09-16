@@ -8,5 +8,7 @@
   "elitasTitle": "GTA V store 'ElitasTravel'",
   "elitasDescription": "The project was made in order to study new technologies such as MERN-stack (MongoDB , Express, React, Node). During development, I first tested React for myself in conjunction with the Redux Toolkit. An extremely simple, but at the same time extremely useful project that helped to understand technologies and use them in practice",
   "thatsMyNoteTitle": "Share Note",
-  "thatsMyNoteDescription": "Was written for two days for learning react and additional library react-router-dom, and how react working with backend (node.js + sequlize). So, in this service you can write something to your friend, and he can see what you sent.But, after 10 minutes sience he seens note, note will removing from this service."
+  "thatsMyNoteDescription": "Was written for two days for learning react and additional library react-router-dom, and how react working with backend (node.js + sequlize). So, in this service you can write something to your friend, and he can see what you sent.But, after 10 minutes sience he seens note, note will removing from this service.",
+  "devPortfolioTitle": "Developer portfolio",
+  "devPortfolioDescription": "The developer's portfolio was developed in between projects. For the first time, I discovered the Framer-Motion library for working with animations. An animation of the transition between pages was implemented, and other smaller animations were introduced into the project"
 }
