@@ -23,7 +23,7 @@ export const ExperienceCard = ({
             <BiBuildingHouse />
             <span> {place}</span>
           </span>
-          <span>{workPlace}</span>
+          <span className={styles.workPlace}>{workPlace}</span>
         </p>
       </div>
       <div className={styles.experienceDuration}>

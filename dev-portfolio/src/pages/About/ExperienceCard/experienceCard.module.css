@@ -17,7 +17,10 @@
 .experiencePlace {
   display: flex;
   max-width: 250px;
-  justify-content: space-between;
+}
+
+.experiencePlace .workPlace {
+  margin-left: 40px;
 }
 
 .experiencePlace span {
