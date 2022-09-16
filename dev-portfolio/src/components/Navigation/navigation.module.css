@@ -27,3 +27,12 @@
   text-align: center;
   transition: all 0.3s;
 }
+
+@media screen and (max-width: 540px) {
+  .navList {
+    flex-direction: column;
+  }
+  .navList li {
+    margin: 10px 0;
+  }
+}

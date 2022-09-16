@@ -22,3 +22,17 @@
   gap: 50px;
   grid-template-columns: repeat(3, 1fr);
 }
+
+@media screen and (max-width: 1400px) {
+  .projectsList {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .projectsList {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

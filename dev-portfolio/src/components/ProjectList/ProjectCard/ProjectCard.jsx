@@ -9,6 +9,7 @@ export const ProjectCard = ({
   description,
   preview,
   code,
+  technologies,
 }) => {
   return (
     <div className={`${styles.projectCard} project-card`}>
@@ -19,6 +20,10 @@ export const ProjectCard = ({
         className={`${styles.projectDescription} project-desc`}>
         <h4>{title}</h4>
         <p className={styles.projectText}>{description}</p>
+        <div className={styles.technologies}>
+          <span>Techstack: </span>
+          {technologies.join(",")}
+        </div>
         <div className={`${styles.links} project-links`}>
           {preview ? (
             <span>

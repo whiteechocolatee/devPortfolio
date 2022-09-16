@@ -34,3 +34,38 @@
   margin: 0;
   padding: 0;
 }
+
+@media screen and (max-width: 870px) {
+  .navContainer {
+    margin: 20px 0;
+  }
+  .footerNav {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 735px) {
+  .logoContainer {
+    margin: 20px auto;
+  }
+  .contactsContainer {
+    width: 100%;
+  }
+  .contactBar {
+    flex-wrap: wrap;
+  }
+  .aboutProject {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .socialNetworks {
+    order: -1;
+  }
+
+  .contactsContainer {
+    flex-direction: column;
+    height: 150px;
+  }
+}

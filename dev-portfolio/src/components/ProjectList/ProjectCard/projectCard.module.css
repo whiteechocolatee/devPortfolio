@@ -2,8 +2,8 @@
   background: #ffffff;
   box-shadow: 2px 2px 100px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
-  width: 373px;
-  max-height: 567px;
+  max-width: 373px;
+  max-height: 575px;
   margin: auto;
 }
 
@@ -24,7 +24,7 @@
 
 .projectText {
   font-weight: 300;
-  height: 195px;
+  height: 175px;
   overflow-y: scroll;
   text-overflow: ellipsis;
 }
@@ -37,4 +37,15 @@
 .links span a {
   margin-left: 8px;
   color: #242424;
+}
+
+.technologies {
+  margin: 5px 0;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.technologies span {
+  font-weight: 400;
+  color: #42446e;
 }

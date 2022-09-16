@@ -16,10 +16,12 @@ function ParallaxText({ children, baseVelocity = 100 }) {
   const baseX = useMotionValue(0);
   const { scrollY } = useScroll();
   const scrollVelocity = useVelocity(scrollY);
+
   const smoothVelocity = useSpring(scrollVelocity, {
     damping: 20,
-    stiffness: 400,
+    stiffness: 100,
   });
+
   const velocityFactor = useTransform(
     smoothVelocity,
     [0, 1000],
@@ -28,6 +30,7 @@ function ParallaxText({ children, baseVelocity = 100 }) {
       clamp: false,
     },
   );
+
   const x = useTransform(
     baseX,
     (v) => `${wrap(-20, -45, v)}%`,
@@ -77,7 +80,9 @@ function ParallaxText({ children, baseVelocity = 100 }) {
 export const Banner = () => {
   return (
     <section
-      className={`${styles.parallaxSection} parallax-section`}>
+      className={`
+    ${styles.parallaxSection}
+       parallax-section`}>
       <ParallaxText baseVelocity={-5}>
         andrey blck andrey blck
       </ParallaxText>

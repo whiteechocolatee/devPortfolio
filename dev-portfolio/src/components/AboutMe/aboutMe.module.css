@@ -34,3 +34,17 @@
 .photo img {
   transform: scale(1.2);
 }
+
+@media screen and (max-width: 670px) {
+  .aboutMe {
+    display: flex;
+    margin: 70px 0;
+    flex-direction: column;
+  }
+  .aboutMeTitle {
+    padding: 0 auto;
+  }
+  .aboutMePhoto {
+    order: -1;
+  }
+}
