@@ -16,3 +16,9 @@
   justify-content: space-between;
 }
 
+.switchers {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}

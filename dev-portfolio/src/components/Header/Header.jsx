@@ -19,13 +19,17 @@ export const Header = () => {
         <nav className={styles.headerNav}>
           <Navigation />
           <SocialNetworks />
-          <div>
-            <ReactSwitch
-              checked={theme === "light"}
-              onChange={themeToggler}
-            />
+          <div className={styles.switchers}>
+            <div>
+              <ReactSwitch
+                checked={theme === "light"}
+                onChange={themeToggler}
+              />
+            </div>
+            <div>
+              <LanguageSwitcher />
+            </div>
           </div>
-          <LanguageSwitcher />
         </nav>
       </div>
     </header>
