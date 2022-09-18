@@ -8,6 +8,7 @@ import { Logo } from "../Logo/Logo";
 import { Navigation } from "../Navigation/Navigation";
 import { SocialNetworks } from "../SocialNetworks/SocialNetworks";
 import { LanguageSwitcher } from "../LanguageSwitcher/LanguageSwitcher";
+import { Sidebar } from "../Sidebar/Sidebar";
 
 export const Header = () => {
   const { theme, themeToggler } = useContext(ThemeContext);
@@ -15,7 +16,13 @@ export const Header = () => {
   return (
     <header className={`${styles.header} container-lg`}>
       <div className={styles.headerContainer}>
-        <Logo />
+        <Sidebar
+          theme={theme}
+          themeToggler={themeToggler}
+        />
+        <div className={styles.logoMobile}>
+          <Logo />
+        </div>
         <nav className={styles.headerNav}>
           <Navigation />
           <SocialNetworks />
