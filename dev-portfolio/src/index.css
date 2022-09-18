@@ -41,7 +41,9 @@ body {
 }
 
 html,
-#dark {
+#dark,
+#dark .sidebarbg,
+#dark .footerNav {
   background: #191919;
   transition: all 0.3s;
 }
@@ -64,7 +66,8 @@ h1 {
 #dark .project-desc h4,
 #dark .about-page h1,
 #dark .contact-title h1,
-#dark .select {
+#dark .select,
+#dark .techstack span {
   color: #fff;
 }
 
