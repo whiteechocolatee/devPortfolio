@@ -1,5 +1,6 @@
 import React from "react";
 import { FiLink, FiGithub } from "react-icons/fi";
+import { motion } from "framer-motion";
 
 import styles from "./projectCard.module.css";
 
@@ -12,7 +13,9 @@ export const ProjectCard = ({
   technologies,
 }) => {
   return (
-    <div className={`${styles.projectCard} project-card`}>
+    <motion.div
+      whileHover={{ scale: 1.2 }}
+      className={`${styles.projectCard} project-card`}>
       <div className={styles.projectImg}>
         <img src={img} className='img-fluid' alt='' />
       </div>
@@ -20,7 +23,7 @@ export const ProjectCard = ({
         className={`${styles.projectDescription} project-desc`}>
         <h4>{title}</h4>
         <p className={styles.projectText}>{description}</p>
-        <div className={styles.technologies}>
+        <div className={`${styles.technologies} techstack`}>
           <span>Techstack: </span>
           {technologies.join(",")}
         </div>
@@ -44,6 +47,6 @@ export const ProjectCard = ({
           </span>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
