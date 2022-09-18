@@ -46,6 +46,11 @@ export const TechStack = () => {
         {images.map((image) => (
           <motion.div
             whileHover={{ scale: 1.2 }}
+            whileTap={{
+              scale: 0.8,
+              rotate: 360,
+              borderRadius: "100%",
+            }}
             key={image.id}
             className={styles.img}>
             <img
