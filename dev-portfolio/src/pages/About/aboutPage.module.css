@@ -19,3 +19,10 @@
   line-height: 26px;
   font-weight: 300;
 }
+
+@media screen and (max-width: 750px) {
+  .main {
+    max-width: 500px;
+    width: 100%;
+  }
+}
