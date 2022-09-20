@@ -43,3 +43,27 @@
   border-radius: 8px;
   background: #d7ffe0;
 }
+
+@media screen and (max-width: 750px) {
+  .experienceCard {
+    flex-direction: column;
+    max-width: 340px;
+    width: 100%;
+  }
+
+  .experienceDuration {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .experienceDate {
+    margin: 0;
+  }
+
+  .experienceTitle {
+    max-width: 340px;
+    width: 100%;
+  }
+}
