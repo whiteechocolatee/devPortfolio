@@ -25,7 +25,7 @@ export const ProjectCard = ({
         <p className={styles.projectText}>{description}</p>
         <div className={`${styles.technologies} techstack`}>
           <span>Techstack: </span>
-          {technologies.join(",")}
+          {technologies.join(" , ")}
         </div>
         <div className={`${styles.links} project-links`}>
           {preview ? (
