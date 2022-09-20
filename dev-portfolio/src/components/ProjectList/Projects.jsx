@@ -23,7 +23,12 @@ export const Projects = () => {
       previewLink: "http://google.com",
       githubLink:
         "https://github.com/whiteechocolatee/navShop",
-      technologies: ["MongoDB,Express,React,Node.js"],
+      technologies: [
+        "MongoDB",
+        "Express",
+        "React",
+        "Node.js",
+      ],
     },
     {
       id: 2,
@@ -32,7 +37,7 @@ export const Projects = () => {
       description: t("nnwrblDescription"),
       githubLink:
         "https://github.com/whiteechocolatee/shop",
-      technologies: ["SQL,Express,Pug,Node.js"],
+      technologies: ["SQL", "Express", "Pug", "Node.js"],
     },
     {
       id: 3,
@@ -41,36 +46,30 @@ export const Projects = () => {
       description: t("thatsMyNoteDescription"),
       githubLink:
         "https://github.com/whiteechocolatee/thatsMyNote",
-      technologies: ["React,React-Route-Dom"],
+      technologies: ["React", "React-Router-Dom"],
     },
     {
       id: 4,
-      title: t("elitasTitle"),
-      img: elitasTravel,
-      description: t("elitasDescription"),
-      githubLink:
-        "https://github.com/whiteechocolatee/ElitasTravel",
-      technologies: ["MongoDB,Express,React,Node.js"],
-    },
-    {
-      id: 5,
       title: t("devPortfolioTitle"),
       img: developerPortfolio,
       description: t("devPortfolioDescription"),
       githubLink:
         "https://github.com/whiteechocolatee/devPortfolio",
-      technologies: ["React,Framer-Motion"],
+      technologies: ["React", "Framer-Motion"],
     },
-    // mock data
     {
-      id: 6,
-      title: t("gribTitle"),
-      img: "grib",
-      description: t("gribDescription"),
-      previewLink: "http://google.com",
+      id: 5,
+      title: t("elitasTitle"),
+      img: elitasTravel,
+      description: t("elitasDescription"),
       githubLink:
-        "https://github.com/whiteechocolatee/navShop",
-      technologies: ["MongoDB,Express,React,Node.js"],
+        "https://github.com/whiteechocolatee/ElitasTravel",
+      technologies: [
+        "MongoDB",
+        "Express",
+        "React",
+        "Node.js",
+      ],
     },
   ];
 
