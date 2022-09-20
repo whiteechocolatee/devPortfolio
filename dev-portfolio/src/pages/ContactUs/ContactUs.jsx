@@ -23,8 +23,8 @@ export const ContactUs = () => {
             damping: 10,
           }}
           className='contact-title'>
-          <h1>{t("contactMe")} :</h1>
-          <h1 className='active'>
+          <h1 className="contactTitle">{t("contactMe")} :</h1>
+          <h1 className='active contactMail'>
             <a href='mailto:creatuseandr@icloud.com'>
               creatuseandr@icloud.com
             </a>
