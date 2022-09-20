@@ -8,6 +8,8 @@ import { TechStack } from "../../components/TechStack/TechStack";
 import { homeContainerVariants } from "../pageAnimations";
 
 export const Main = () => {
+  window.scroll(0, 0);
+
   return (
     <motion.div
       variants={homeContainerVariants}
