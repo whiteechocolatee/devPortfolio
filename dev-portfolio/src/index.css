@@ -111,3 +111,20 @@ h1 {
   align-items: center;
   justify-content: center;
 }
+
+
+@media screen and (max-width: 570px) {
+  .contactTitle{
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .contactTitle{
+    font-size: 18px;
+  }
+
+  .contactMail{
+    font-size: 25px;
+  }
+}
