@@ -1,6 +1,7 @@
 import React from "react";
 import { motion, useCycle } from "framer-motion";
 import ReactSwitch from "react-switch";
+import { useTranslation } from "react-i18next";
 
 import styles from "./sidebar.module.css";
 import { MenuToggle } from "./ToggleOpen";
@@ -29,13 +30,14 @@ const variants = {
 
 export const Sidebar = ({ themeToggler, theme }) => {
   const [open, setOpen] = useCycle(false, true);
+  const { t } = useTranslation(["header"]);
 
   const items = [
-    { id: 1, link: "/", name: "Home" },
-    { id: 2, link: "/about", name: "About" },
-    { id: 3, link: "/technologies", name: "Tech stack" },
-    { id: 4, link: "/projects", name: "Projects" },
-    { id: 5, link: "/contacts", name: "Contact" },
+    { id: 1, link: "/", name: t("home") },
+    { id: 2, link: "/about", name: t("about") },
+    { id: 3, link: "/technologies", name: t("techStack") },
+    { id: 4, link: "/projects", name: t("projects") },
+    { id: 5, link: "/contacts", name: t("contact") },
   ];
 
   return (
