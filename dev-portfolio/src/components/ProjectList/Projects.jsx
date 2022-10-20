@@ -7,6 +7,7 @@ import grib from "./img/gribUa.png";
 import elitasTravel from "./img/ElitasTravel.png";
 import shareNote from "./img/shareNote.png";
 import developerPortfolio from "./img/developerPortfolio.png";
+import bweiss from "./img/bweiss.png";
 
 import { ProjectCard } from "./ProjectCard/ProjectCard";
 import { useTranslation } from "react-i18next";
@@ -69,6 +70,22 @@ export const Projects = () => {
         "Express",
         "React",
         "Node.js",
+      ],
+    },
+    {
+      id: 6,
+      title: t("bweissTitle"),
+      img: bweiss,
+      description: t("bweissDescription"),
+      previewLink: "https://bweisshealth.com/",
+      githubLink:
+        "https://github.com/whiteechocolatee/navShop",
+      technologies: [
+        "Shopify",
+        "Figma",
+        "Photoshop",
+        "FancyBox",
+        "OwlCarousel",
       ],
     },
   ];
