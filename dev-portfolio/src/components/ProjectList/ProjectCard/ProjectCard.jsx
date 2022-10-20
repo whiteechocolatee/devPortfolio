@@ -14,7 +14,7 @@ export const ProjectCard = ({
 }) => {
   return (
     <motion.div
-      whileHover={{ scale: 1.2 }}
+      whileHover={{ scale: 1.1 }}
       className={`${styles.projectCard} project-card`}>
       <div className={styles.projectImg}>
         <img src={img} className='img-fluid' alt='' />
